@@ -8,6 +8,7 @@ if (isset($_COOKIE['PHPSESSID'])) {
 }
 
 $page = (int)($_GET['page'] ?? 1);
-$tasks = getTasks($page);
+$order = $_GET['order'] ?? 'user_name';
+$tasks = getTasks($page, 3, $order);
 
 include '../views/show.php';
