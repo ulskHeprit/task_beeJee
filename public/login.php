@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'
     ) {
     $name = $_POST['name'];
     $password = $_POST['password'];
-    if ($name === 'admin' && $password === '123') { // TODO
+    if ($name === getenv('ADMIN') && $password === getenv('PASSWORD')) { // TODO
         session_start();
         $_SESSION['is_admin'] = true;
         header("Location: /");
