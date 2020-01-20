@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>
+<?php include 'head.html'?>
+
 <body>
 <form action="" method="POST">
     <p>name: <input type="text" name="name" value="<?= $_POST['name']?>"></p>

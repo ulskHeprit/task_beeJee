@@ -7,6 +7,7 @@ require_once '../env.php';
 if (isset($_COOKIE['PHPSESSID'])) {
     session_start();
 }
+
 if ($_SESSION['is_admin'] !== true) {
     header('Location: /');
     exit();

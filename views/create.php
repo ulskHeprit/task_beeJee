@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
+<?php include 'head.html'?>
 
-</head>
 <body>
     <a href="/"><button>Main page</button></a>
     <form method="post">
